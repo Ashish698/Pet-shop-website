@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Mania</title>
+  <link rel="stylesheet" href="index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="head">
+      <!-- Logo -->
+      <div class="left-container">
+        <img src="images/Untitled design.jpg" alt="Pet Mania Logo">
+      </div>
+      <!-- Menu Bar -->
+      <div class="right-container">
+        <div class="home-dropdown">
+          <a href="home.html" class="home-link">Home</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Dogs</a></li>
+              <li><a href="#">Cats</a></li>
+              <li><a href="#">Birds</a></li>
+              <li><a href="#">Others</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#">About Us</a>
+        <div class="home-dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Grooming</a></li>
+              <li><a href="#">Walking</a></li>
+              <li><a href="#">Boarding</a></li>
+              <li><a href="#">Training</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#">Contact</a>
+        <!-- Login Button -->
+        <button class="button-edit">Login</button>
+        
+      </div>
+      <!--  Menu Icon -->
+      <a href="#" class="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Body -->
+    <section class="format">
+      <h1>Available</h1>
+      <h2>Dogs and Cats</h2>
+      <p>Groom your dogs and cats. Have treats or</p>
+      <p>Get new pets home with you.</p>
+      <div class="buttons">
+        <button class="book-button">Book a Session</button>
+        <button class="buy-button">Buy Now</button>
+      </div>
+    </section>
+
+    <!-- Login Form -->
+    <section class="form-container">
+      <h2 class="login">Login</h2>
+
+      <div class="input-button">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bx-user'></i>
+      </div>
+
+      <div class="input-button">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+
+      <div class="text">
+        <label>
+          <input type="checkbox"> Remember Me
+        </label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button class="submit">
+        Login
+      </button>
+
+      <div class="registration">
+        <p>Don't have an account?
+          <a href="#">Register</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2024 Pet Grooming Services. All Rights Reserved. BY ASHISH YADAV</p>
+    </div>
+  </footer>
+
+   <!-- javascript -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const rightContainer = document.querySelector('.right-container');
+
+    navToggle.addEventListener('click', () =>
+     {
+      rightContainer.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    }
+    );
+  </script>
+</body>
+
+</html>
